@@ -1,0 +1,127 @@
+/* Navbar Effect */
+nav.navbar ul li a {
+    position:relative;
+    z-index: 1;
+  }
+  nav.navbar ul li a:hover {
+    color: #f9fafd;
+  }
+  nav.navbar ul li a:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    background: #2f48c0;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+  }
+  nav.navbar ul li a:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+  }
+  
+
+.tool .card {
+	position: relative;
+	width: 270px;
+
+	background: rgba(255, 255, 255, 0.05);
+	margin: 20px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.tool .card .content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.5s;
+}
+
+.tool .card:hover .content {
+	transform: translateY(-20px);
+}
+
+.tool .card .content .imgBx {
+	position: relative;
+	width: 250px;
+	height: 50px;
+	overflow: hidden;
+}
+
+.tool .card .content .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.tool .card .content .contentBx h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0 10px;
+	line-height: 1.1em;
+}
+
+.tool .card .content .contentBx h3 span {
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: initial;
+}
+
+.tool .card .sci {
+	position: absolute;
+	bottom: 50px;
+	display: flex;
+}
+
+.tool .card .sci button {
+	list-style: none;
+	margin: 0 10px;
+	transform: translateY(40px);
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.tool .card:hover .sci button {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+.tool .card .sci button {
+	color: #fff;
+	font-size: 12px;
+}
+
+.card {
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 1.5em;
+  }
+  
+  .card:hover {
+
+    transform: scale(1.1); 
+  }
